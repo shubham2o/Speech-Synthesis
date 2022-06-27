@@ -10,6 +10,57 @@
 </head>
 
 <body>
+    <!-- SpeechSynthesisUtterance -->
+    <h1>SpeechSynthesisUtterance</h1>
+    <p>• The SpeechSynthesisUtterance interface of the Web Speech API represents a speech request. It contains the content the speech service should read and information about how to read it (example language, pitch and volume).
+    </p>
+    <p>• Returns a new SpeechSynthesisUtterance object instance.</p>
+    <p>• SpeechSynthesisUtterance also inherits from its parent interface, EventTarget.</p>
+    <p>• <i>SpeechSynthesisUtterance.lang</i> - Gets and sets the language of the utterance.</p>
+    <p>• <i>SpeechSynthesisUtterance.pitch</i>- Gets and sets the pitch at which the utterance will be spoken at.</p>
+    <p>• <i>SpeechSynthesisUtterance.rate</i> - Gets and sets the speed at which the utterance will be spoken at.</p>
+    <p>• Listen to these events using addEventListener or by assigning an event listener to the oneventname property of this interface.</p>
+    <hr>
+
+    <!-- voiceChanged event -->
+    <h1>voiceChanged event</h1>
+    <p>• The voiceChanged event of the Web Speech API is fired when the list of SpeechSynthesisVoice objects that would be returned by the SpeechSynthesis.</p>
+    <p>• The voicechanged event of the Web Speech API is fired when the list of SpeechSynthesisVoice objects that would be returned by the SpeechSynthesisgetVoices() method has changed (when the voicechanged event fires).</p>
+    <p>• Use the event name in methods like addEventListener(), or set an event handler property.</p>
+    <p>• <i>SYNTAX</i>
+        <br> addEventListener("voicechanged", event => {})
+        <br> onvoicechanged = event => {}
+    </p>
+    <hr>
+
+    <!-- JavaScript Array find() -->
+    <h1>JavaScript Array find()</h1>
+    <p>• The find() method returns the value of the first element that passes a test.</p>
+    <p>• The find() method executes a function for each array element.</p>
+    <p>• The find() method returns undefined if no elements are found.</p>
+    <p>• The find() method does not execute the function fo empty elements.</p>
+    <p>• The find() method does not change the original array.</p>
+    <p>• The find() method is ECMAScript(ES6) feature.</p>
+    <p>• <i>SYNTAX</i>
+        <br> array.find(function(currentValue, index, arr), thisValue)
+    </p>
+    <br>
+
+    <!-- EXAMPLE 1 || -->
+    <p>• <strong>EXAMPLE 1 ||</strong> Find the value of the first element with a value over 18: </p>
+    <p>find() returns the value of the first element in an array that passed a test (provided by a function).</p>
+    <p id="demo"></p>
+    <br>
+
+    <!-- EXAMPLE 2 || -->
+    <p>• <strong>EXAMPLE 2 ||</strong> Find the value of the first element with that a value above a specific number:
+    </p>
+    <p>Click "Test" to return the value of the first element in the array that has a value above this number:</p>
+    <p><input type="number" id="ageToCheck" value="18"></p>
+    <button onclick="myFunction()">Test</button>
+    <p id="demo1"></p>
+    <hr>
+
     <script src="Doubts.js"></script>
 </body>
 
